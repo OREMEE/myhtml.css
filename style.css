@@ -82,7 +82,10 @@ nav ul li a {
   width: 70%;
 }
 
-.logo-img,
+.logo-img{
+  margin-left: -20px;
+  margin-top: 12px;
+}
 .cta {
   margin: 12px 0 0 0;
 }
@@ -457,7 +460,7 @@ small {
   font-size: 15px;
 }
 .footer-bottom {
-  margin: 0 50px 70px;
+  margin: 0 50px 30px;
 }
 .footer-bottom small {
   color: #15143966;
@@ -509,7 +512,7 @@ small {
   border-radius: 5px;
 }
 .pricing button:hover {
-  background-color: #1e0e62;
+  background: #361f9b;
   color: white;
   cursor: pointer;
 }
@@ -566,10 +569,11 @@ main {
 
 /* pricing ends  */
 @media screen and (max-width: 650px) {
-  header {
+  header, .features, .inputcnt {
     flex-direction: column;
     margin-bottom: 20px;
   }
+
   .logo-img {
     width: 5%;
   }
@@ -592,6 +596,7 @@ main {
     font-weight: 900%;
     color: #1e0e62;
     margin-top: 23px;
+    margin-right: 10px;
   }
   .mobile-view {
     display: flex;
@@ -620,9 +625,7 @@ main {
   .content {
     margin: 3px 0 4px 0;
   }
-  .img-features {
-    display: none;
-  }
+ 
   .text-features {
     margin-left: 20px;
     margin-top: 5px;
@@ -635,16 +638,32 @@ main {
   }
   .contact-head {
     padding-top: 0;
+    height: 550px;
   }
-  .place-cnt2 input {
+  .place-cnt2 input, .place-cnt input {
+    width: 120%;
+  }
+  .place-cnt input, .place-cnt2 {
+   margin-left: -80px;
+  }
+  .cnt-btn button{
     width: 90%;
+
   }
+
   .form-all {
     padding: 0;
   }
   .form-size {
-    width: 10%;
-    height: 50px;
+    width: 80%;
+   margin: 0px ;
+  height: 150px;
+  margin-left: 20px;
+  margin-top: 20px;
+  
+  }
+  .form {
+   justify-content: space-evenly;
   }
   .left-div {
     gap: 20px;
@@ -653,4 +672,13 @@ main {
     width: 5%;
     margin-right: 5px;
   }
+  .features{
+    margin-bottom: 20px;
+  }
+  .e-commerce-body {
+    margin-top: 40px;
+  }
+ .contact-body{
+  padding: 10px ;
+ }
 }
